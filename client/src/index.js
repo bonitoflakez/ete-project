@@ -35,7 +35,10 @@ const BackendStatusIndicator = () => {
           <App />
         </BrowserRouter>
       ) : (
-        <div>Loading backend server, please wait...</div>
+        <div className="flex h-screen flex-col items-center justify-center">
+          <h3 className="text-center text-2xl font-semibold">Loading backend server, please wait...</h3>
+          <p className="text-sm opacity-60">Page will reload automatically after server loads</p>
+        </div>
       )}
     </React.StrictMode>
   );
